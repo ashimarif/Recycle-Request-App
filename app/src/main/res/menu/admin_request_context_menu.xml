@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_mark_completed"
+        android:title="Mark as Completed" />
+    <item
+        android:id="@+id/menu_mark_pending"
+        android:title="Mark as Pending" />
+    <item
+        android:id="@+id/menu_details"
+        android:title="View Details" />
+</menu>

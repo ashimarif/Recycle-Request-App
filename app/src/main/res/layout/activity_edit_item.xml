@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="16dp"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="6dp"
+    android:background="@drawable/bgpro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="1">
+
+        <!-- LEFT: Item Info -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/etItemName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Item Name"
+                android:inputType="text"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/etPricePerKg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Price per Kg"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="10dp" />
+
+
+
+            <Button
+                android:id="@+id/btnSaveItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Changes"
+                android:backgroundTint="@color/black"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+
+        <!-- RIGHT: Buttons -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/btnEditItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#4CAF50"
+                android:layout_marginBottom="8dp"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="6dp" />
+
+            <Button
+                android:id="@+id/btnDeleteItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#F44336"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="6dp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

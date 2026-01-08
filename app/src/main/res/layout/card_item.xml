@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:backgroundTint="#FFFFFF"
+    card_view:cardCornerRadius="18dp"
+    card_view:cardElevation="8dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardPreventCornerOverlap="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp"
+        android:background="#FAFAFA"> <!-- Soft light background -->
+
+        <!-- Item Name -->
+        <TextView
+            android:id="@+id/tvItemName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Plastic Bottles"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#2C3E50"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnSelectItem"
+            app:layout_constraintHorizontal_bias="0" />
+
+        <!-- Price per Kg -->
+        <TextView
+            android:id="@+id/tvPricePerKg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="RM 0.50 / kg"
+            android:textSize="16sp"
+            android:textColor="#cb4335"
+            app:layout_constraintTop_toBottomOf="@id/tvItemName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnSelectItem"
+            android:layout_marginTop="6dp" />
+
+        <!-- Select Button -->
+        <Button
+            android:id="@+id/btnSelectItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/black"
+            android:elevation="4dp"
+            android:paddingHorizontal="18dp"
+            android:paddingVertical="8dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/tvItemName"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="8dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
